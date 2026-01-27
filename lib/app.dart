@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'core/routes.dart';
+import 'package:grocery_app/features/home/home_screen.dart';
+
 
 class App extends StatelessWidget {
   @override
@@ -17,8 +18,7 @@ class App extends StatelessWidget {
           textTheme: GoogleFonts.poppinsTextTheme(),
           primarySwatch: Colors.green,
         ),
-        initialRoute: AppRoutes.home,
-        onGenerateRoute: AppRoutes.generateRoute,
+        home: HomeScreen(),
       ),
     );
   }
