@@ -4,6 +4,7 @@ import 'package:grocery_app/features/home/widgets/floatingactionbutton.dart';
 import 'package:grocery_app/features/home/widgets/list_categories.dart';
 
 import '../../core/widgets/bottom_nav_bar.dart';
+import '../produce/vegetables/vegetables_screen.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -58,8 +59,12 @@ class HomeScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 20.h,),
                   ListCategories(),
+                  SizedBox(height: 15.h,),
+
+
                 ],
               ),
+             
             ),
           ),
         ),

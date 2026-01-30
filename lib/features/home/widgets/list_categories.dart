@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../categories/categories_screen.dart';
-import '../../categories/widgets/CategoryItem.dart';
+import '../../categories/widget/CategoryItem.dart';
+
 
 class ListCategories extends StatelessWidget {
   const ListCategories({super.key});

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../features/ favorites/favorites_screen.dart';
+
+import '../../features/fav/fav_screen.dart';
 import '../../features/portfolio/portfolio_screen.dart';
 
 class BottomNavBar extends StatelessWidget {
@@ -23,7 +24,7 @@ class BottomNavBar extends StatelessWidget {
           }),
           SizedBox(width: 30.w),
           IconButton(icon:  Icon(Icons.favorite_border, size: 28.sp, color: Colors.grey), onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context)=> FavoritesScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> FavScreen()));
           }),
         ],
       ),
