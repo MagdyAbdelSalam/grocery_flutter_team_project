@@ -16,8 +16,10 @@ class LoginButtom extends StatelessWidget {
           final prefs = await SharedPreferences.getInstance();
           await prefs.setBool('isLoggedIn', true);
 
+        onTap: () {
           Navigator.pushReplacement(
             context,
+            MaterialPageRoute(builder: (context) => const HomeScreen()),
             MaterialPageRoute(builder: (_) => const HomeScreen()),
           );
         },
